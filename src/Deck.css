@@ -1,0 +1,17 @@
+.Deck-card-area{
+    margin-top: 90px;
+}
+
+button {
+    background-color: white;
+    border: black 1px solid;
+    height: 20px;
+    border-radius: 2px;
+
+}
+
+button:hover {
+    background-color: green;
+   
+
+}
