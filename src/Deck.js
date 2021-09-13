@@ -16,6 +16,7 @@ class Deck extends Component{
             
         }
         this.getCard = this.getCard.bind(this)
+        
     }
 
     async componentDidMount() {
@@ -47,6 +48,8 @@ class Deck extends Component{
         }
     }
 
+ 
+
 
     render(){
         let card = this.state.drawn.map( card => (
@@ -56,9 +59,10 @@ class Deck extends Component{
             />
         ))
         return(
-            <div>
-            <h1> Card Deck</h1>
-            <button onClick={this.getCard}>Add New card </button>
+            <div className='Deck'>
+            <h1> ◈ Card Deck ◈</h1>
+            <h2>  A little react Demo! </h2>
+            <button onClick={this.getCard}>Add card </button>
             <div className='Deck-card-area'> {card} </div>
             
             
